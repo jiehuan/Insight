@@ -19,9 +19,13 @@ For Java
 	
 For Python
     import os
+    
     import codecs
+    
     import numpy as np
+    
     import pandas as pd
+    
     import sys
 	
 # How can I use it?
