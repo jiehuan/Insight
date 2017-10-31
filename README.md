@@ -2,7 +2,7 @@
 
 This program is design to analyze campaign contribution data from the Federal Election Commission, and group by recipient/zip code and recipient/date, so that campaign manager can target these area and time frame for future donations.
 
-This program uses both Java and Python, as these two programming languages are the two most popular ones for data engineering and data analysis. 
+This program uses both Java and Python, as these two are the two most popular programming languages for data engineering and data analysis.
 
 
 
@@ -10,6 +10,7 @@ This program uses both Java and Python, as these two programming languages are t
 All packages/classes are very common ones.
 
 For Java
+    
     import java.io.*;
     
     import java.text.ParseException;
@@ -24,6 +25,7 @@ For Java
 
 
 For Python
+    
     import os
     
     import codecs
