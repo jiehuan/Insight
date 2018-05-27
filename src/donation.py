@@ -8,7 +8,7 @@ import sys
 
 def politic(filename, outName):
    
-    data = pd.read_table(filename, sep = "|", header = None, parse_dates = [13], dtype  = {0:str, 10:str, 14:np.float}, error_bad_lines = False)
+    data = pd.read_table(filein, sep = "|", header = None, parse_dates = [13], dtype  = {0:str, 10:str, 14:np.float}, error_bad_lines = False)
     data_sel = data[data[15].isnull()]
     data_sel2 = data_sel[[0, 13, 14]]
     data_sel2['date'] = pd.to_datetime(data_sel2[13], format='%m%d%Y', errors='coerce')
@@ -40,5 +40,3 @@ if __name__ == '__main__':
     fileout = filenames[2]
     
     politic(filein, fileout)    
-    
-    
